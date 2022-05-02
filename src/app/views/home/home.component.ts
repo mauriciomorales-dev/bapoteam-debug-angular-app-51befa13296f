@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ConnectionService } from '@service/connection.service';
 import { DynamicFormService } from '@common/forms/dynamic-form.service';
 import { MatSnackBar } from '@angular/material';
+import { Validators } from '@angular/forms';
 declare var window: any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 	form: any = false;
