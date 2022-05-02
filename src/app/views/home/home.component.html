@@ -1,0 +1,22 @@
+<div class="container">
+	<form (submit)="sendMessage()">
+		<h1>Send us a Message</h1>
+		<p>Send a message to the BAPO team!</p>
+		<mat-form-field appearance="outline">
+			<mat-label>Name</mat-label>
+			<input matInput formControlName="name">
+		</mat-form-field>
+		<mat-form-field appearance="outline">
+			<mat-label>Email</mat-label>
+			<input type="text">
+		</mat-form-field>
+		<mat-form-field appearance="outline">
+			<mat-label>Message</mat-label>
+			<textarea matInput formControlName="message"></textarea>
+			<mat-hint>If you have fixed all the bugs you can send a message!</mat-hint>
+		</mat-form-field>
+		<div class="actions">
+			<button mat-flat-button color="primary" [disabled]="form.status === 'INVALID'">Send Message</button>
+		</div>
+	</form>
+</div>

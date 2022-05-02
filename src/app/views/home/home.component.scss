@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background-color: rgba(0,0,0,0.05);
+	height: 100vh;
+	form {
+		display: flex;
+		width: 500px;
+		max-width: 80%;
+		flex-direction: column;
+		justify-content: center;
+		padding: 1rem 2rem;
+		border: 1px solid rgba(0,0,0,0.15);
+		border-radius: 3px;
+		background-color: #FFF;
+		textarea {
+			height: 200px;
+			resize: none;
+		}
+		.actions {
+			margin: 2rem 0 1rem;
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}
